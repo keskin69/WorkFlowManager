@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csdef>
+	<units>
+		<value code="CM">
+			<label lang="TR">cm.</label>
+			<label lang="US">cm.</label>
+		</value>
+	</units>
+	<chararacteristics>
+		<CS name="CS_Radius">
+			<label>
+				<TR>Çap</TR>
+				<US>Radius</US>
+			</label>
+			<type>Selection</type>
+			<value default="true" unit="CM">74</value>
+			<value unit="CM">98</value>
+		</CS>
+		<CS name="CS_MACNo">
+			<label>
+				<TR>MAC Adresi</TR>
+				<US>MAC Address</US>
+			</label>
+			<tooltip>
+				<TR>Modemin MAC Adresi</TR>
+				<US>MAC Address of the modem</US>
+				<type>text</type>
+			</tooltip>
+		</CS>
+		<CS name="
+				CS_LITAS ">
+			<label>
+				<TR>LITAS Bildirimi</TR>
+				<US>LITAS Declaration</US>
+			</label>
+			<value>false</value>
+			<tooltip>
+				<TR>LITAS bildirimi yapılacaksa bu alan seçili olmalıdır</TR>
+				<US>Check this item if there will be a LITAS
+					declaration
+				</US>
+			</tooltip>
+			<type>boolean</type>
+		</CS>
+	</chararacteristics>
+</csdef>

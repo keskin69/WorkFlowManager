@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow>
+	<manager class="manager.FlowManager">
+	</manager>
+	<node name="Start">
+		<title>Başlangıç</title>
+		<connect>Node1</connect>
+		<class>test.Begin</class>
+	</node>
+	<node name="Node1">
+		<title>1 Numaralı Node</title>
+		<class>test.Node1</class>
+		<connect value="yes">Node3</connect>
+		<connect value="no">Node2</connect>
+		<gui>
+			<String name="Adı" input="yes" mandatory="yes"></String>
+			<String name="Soyadı" input="yes" mandatory="yes"></String>
+		</gui>
+	</node>
+	<node name="Node2">
+		<title>2 Numaralı Node</title>
+		<connect>End</connect>
+		<class>test.Node2</class>
+		<gui>
+			<String name="Adı"></String>
+			<String name="Soyadı"></String>
+			<String input="yes" name="Adres"></String>
+			<TextArea input="yes" name="Açıklama"></TextArea>
+		</gui>
+	</node>
+	<node name="Node3">
+		<title>3 Numaralı Node</title>
+		<connect>End</connect>
+		<class>test.Node3</class>
+		<gui>
+			<String input="yes" name="Soyadı"></String>
+			<String input="yes" name="Ülke" ></String>
+		</gui>
+	</node>
+	<node name="End">
+		<title>Bitiş Nodu</title>
+		<class>test.End</class>
+	</node>
+</flow>
